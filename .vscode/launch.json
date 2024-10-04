@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "type": "swift-lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:Package}",
+      "name": "Debug Projects",
+      "program": "${workspaceFolder:Package}/.build/debug/Projects",
+      "preLaunchTask": "swift: Build Debug Projects"
+    },
+    {
+      "type": "swift-lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:Package}",
+      "name": "Release Projects",
+      "program": "${workspaceFolder:Package}/.build/release/Projects",
+      "preLaunchTask": "swift: Build Release Projects"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:Package}",
+      "name": "Debug MyCLI",
+      "program": "${workspaceFolder:Package}/.build/debug/MyCLI",
+      "preLaunchTask": "swift: Build Debug MyCLI"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:Package}",
+      "name": "Release MyCLI",
+      "program": "${workspaceFolder:Package}/.build/release/MyCLI",
+      "preLaunchTask": "swift: Build Release MyCLI"
+    }
+  ]
+}
